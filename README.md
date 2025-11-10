@@ -37,8 +37,7 @@ This project converts the original `Lesson_6.ipynb` notebook into a production-f
 
 ### 1. Configure Secrets (Do This First)
 
-Provide `GEMINI_API_KEY` locally—never commit it.
-- **`config_secret.py` (recommended):** copy `config_secret.example.py`, rename to `config_secret.py`, and paste your key. Git already ignores this file.
+- **`config_secret.py` :** Paste your key in this file. 
 - **Shell variable (deployments):** if you’re running on a hosted platform, set `GEMINI_API_KEY` as an environment variable there.
 
 `config.py` imports `config_secret.py` when present; otherwise it looks for the environment variable. No `.env` file needed.
