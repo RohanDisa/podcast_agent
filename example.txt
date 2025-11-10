@@ -1,0 +1,1 @@
+Generate a research report and podcast about the latest AI news for NASDAQ-listed US companies.

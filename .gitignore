@@ -1,0 +1,40 @@
+# Generated files
+*.wav
+*.md
+ai_research_report.md
+ai_today_podcast.wav
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.ipynb
+
+# Environment variables
+.env
+.env.local
+config_secret.py
+tp.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+
+
+
