@@ -23,7 +23,6 @@ This project converts the original `Lesson_6.ipynb` notebook into a production-f
 ├── config.py        # Non-secret configuration (models, whitelist, filenames)
 ├── helper.py        # Environment loader for local development
 ├── config_secret.py # Local-only secrets (ignored by git)
-├── Lesson_6.ipynb   # Original notebook source for reference
 └── requirements.txt # Python dependencies
 ```
 
