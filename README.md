@@ -37,12 +37,11 @@ This project converts the original `Lesson_6.ipynb` notebook into a production-f
 
 ### 1. Configure Secrets (Do This First)
 
-Provide `GEMINI_API_KEY` locally—never commit it. Pick whichever option fits your workflow:
+Provide `GEMINI_API_KEY` locally—never commit it.
 - **`config_secret.py` (recommended):** copy `config_secret.example.py`, rename to `config_secret.py`, and paste your key. Git already ignores this file.
-- **`.env` file:** create `.env` with `GEMINI_API_KEY=your-key`.
-- **Shell variable:** export `GEMINI_API_KEY` in your terminal session before launching Streamlit.
+- **Shell variable (deployments):** if you’re running on a hosted platform, set `GEMINI_API_KEY` as an environment variable there.
 
-`config.py` loads `.env`, then `config_secret.py`, and finally falls back to the environment variable.
+`config.py` imports `config_secret.py` when present; otherwise it looks for the environment variable. No `.env` file needed.
 
 ---
 
