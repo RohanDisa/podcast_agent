@@ -111,15 +111,6 @@ Edit `config.py` to tweak non-secret settings:
 
 ---
 
-### Troubleshooting
-
-| Issue | Likely Cause | Fix |
-| ----- | ------------ | --- |
-| `404 NOT_FOUND` for model | Model unavailable to your project/region | Use the “List Available Models” workflow manually (if needed) or update `config.py` with a supported model. |
-| `Tool use with function calling is unsupported` | Model lacks tool support | Choose a Gemini 2.0/2.5 model with function-calling capability. |
-| No output files | Agent step failed silently | Check the Streamlit log; adjust `WHITELIST_DOMAINS` or ensure API key permissions. |
-| Push rejected | Remote branch mismatch | `git push -u origin main` for new repos, or rebase against the remote branch name shown in GitHub. |
-
 ---
 
 ### Deployment Notes
@@ -130,10 +121,6 @@ Edit `config.py` to tweak non-secret settings:
 
 ---
 
-### Credits
 
-- Built with [Google Agent Development Kit](https://github.com/google-deepmind/agent-developer-kit) and [Gemini](https://developers.google.com/ai/gemini).
-- Streamlit UI inspired by the `Lesson_6.ipynb` notebook provided by the project owner.
-
-Happy podcasting! 🎙️
+Happy podcasting! 
 
