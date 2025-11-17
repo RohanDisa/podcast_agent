@@ -10,7 +10,7 @@ This project is a production-friendly Streamlit app, backed by Google's Agent De
 - **Trusted sourcing**: searches are automatically restricted to a whitelisted set of tech news domains.
 - **End-to-end workflow**: research → financial context → markdown report → conversational script → multi-speaker TTS.
 - **Configurable frontend**: Streamlit UI tailored for single-request, chat-style interactions.
-- **Pluggable secrets**: Gemini API key is read from `config_secret.py`, `.env`, or environment variables—never committed.
+- **Pluggable secrets**: Gemini API key is read from `config_secret.py`, `.env`, or environment variables.
 
 ---
 
@@ -58,7 +58,7 @@ This project is a production-friendly Streamlit app, backed by Google's Agent De
 - **`config_secret.py` :** Paste your key in this file. 
 - **Shell variable (deployments):** if you’re running on a hosted platform, set `GEMINI_API_KEY` as an environment variable there.
 
-`config.py` imports `config_secret.py` when present; otherwise it looks for the environment variable. No `.env` file needed.
+`config.py` imports `config_secret.py` when present; otherwise it looks for the environment variable.
 
 ---
 
