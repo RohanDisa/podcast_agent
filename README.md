@@ -1,7 +1,7 @@
 ## AI News Podcast Generator
 
 Generate structured AI news briefings and multi-speaker podcast audio in one click.  
-This project converts the original `Lesson_6.ipynb` notebook into a production-friendly Streamlit app, backed by Google’s Agent Development Kit (ADK) and Gemini models.
+This project is a production-friendly Streamlit app, backed by Google's Agent Development Kit (ADK) and Gemini models.
 
 ---
 
@@ -105,17 +105,5 @@ Edit `config.py` to tweak non-secret settings:
 | `SPEAKER_CONFIGS` | Voice names for the TTS speakers. |
 
 ---
-
----
-
-### Deployment Notes
-
-- Before pushing, confirm `config_secret.py` and `.env` are ignored (`git status --ignored=matching`).
-- For hosted environments (e.g., Streamlit Cloud), provide `GEMINI_API_KEY` via environment variables or secrets management.
-- Monitor API usage: Gemini TTS and function calling can incur costs depending on your plan.
-
----
-
-
 Happy podcasting! 
 
