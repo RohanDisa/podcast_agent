@@ -10,7 +10,7 @@ This project is a production-friendly Streamlit app, backed by Google's Agent De
 - **Trusted sourcing**: searches are automatically restricted to a whitelisted set of tech news domains.
 - **End-to-end workflow**: research → financial context → markdown report → conversational script → multi-speaker TTS.
 - **Configurable frontend**: Streamlit UI tailored for single-request, chat-style interactions.
-- **Pluggable secrets**: Gemini API key is read from `config_secret.py`, `.env`, or environment variables—never committed.
+- **Pluggable secrets**: Gemini API key is read from `config_secret.py`, `.env`, or environment variables.
 
 ---
 
