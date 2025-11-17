@@ -40,7 +40,7 @@ This project is a production-friendly Streamlit app, backed by Google's Agent De
 - **`config_secret.py` :** Paste your key in this file. 
 - **Shell variable (deployments):** if you’re running on a hosted platform, set `GEMINI_API_KEY` as an environment variable there.
 
-`config.py` imports `config_secret.py` when present; otherwise it looks for the environment variable. No `.env` file needed.
+`config.py` imports `config_secret.py` when present; otherwise it looks for the environment variable.
 
 ---
 
