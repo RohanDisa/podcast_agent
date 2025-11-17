@@ -14,6 +14,24 @@ This project is a production-friendly Streamlit app, backed by Google's Agent De
 
 ---
 
+### How It Works
+
+1. **Root Agent (`ai_news_researcher`)**
+   - Uses Gemini via ADK Runner (`google.adk.runners.Runner`).
+   - Tools: Google Search (whitelist-enforced), financial context fetcher, markdown writer, and the `podcaster_agent`.
+   - Strict callback pipeline: filters search domains, enforces recency, and injects sourcing notes into the final report.
+
+2. **Podcaster Agent**
+   - Receives the scripted dialogue and invokes `generate_podcast_audio`.
+   - Uses Gemini's multi-speaker TTS (`gemini-2.5-flash-preview-tts` by default).
+
+3. **Streamlit Frontend**
+   - Single request UI; results render in-place.
+   - No raw agent transcripts shown—only final artifacts.
+   - Automatically manages per-run sessions through ADK's `InMemorySessionService`.
+
+---
+
 ### Project Layout
 
 ```text
@@ -71,24 +89,6 @@ The UI flow:
 4. Review/download the markdown report and generated `.wav` podcast.
 
 The sidebar displays the whitelisted news domains the agent trusts while searching.
-
----
-
-### How It Works
-
-1. **Root Agent (`ai_news_researcher`)**
-   - Uses Gemini via ADK Runner (`google.adk.runners.Runner`).
-   - Tools: Google Search (whitelist-enforced), financial context fetcher, markdown writer, and the `podcaster_agent`.
-   - Strict callback pipeline: filters search domains, enforces recency, and injects sourcing notes into the final report.
-
-2. **Podcaster Agent**
-   - Receives the scripted dialogue and invokes `generate_podcast_audio`.
-   - Uses Gemini’s multi-speaker TTS (`gemini-2.5-flash-preview-tts` by default).
-
-3. **Streamlit Frontend**
-   - Single request UI; results render in-place.
-   - No raw agent transcripts shown—only final artifacts.
-   - Automatically manages per-run sessions through ADK’s `InMemorySessionService`.
 
 ---
 
