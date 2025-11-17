@@ -1,7 +1,3 @@
-"""
-Main agent module containing the multi-agent system for AI news research and podcast generation.
-"""
-
 from typing import Dict, List, Optional
 import pathlib
 import wave

@@ -1,11 +1,4 @@
-"""
-Configuration file for API keys and settings.
 
-Secrets should not be committed. Provide your Gemini API key through one of:
-1. Creating a `config_secret.py` file (see `config_secret.example.py`)
-2. Setting the environment variable `GEMINI_API_KEY`
-3. Defining `GEMINI_API_KEY` in a local `.env` file
-"""
 from __future__ import annotations
 
 import os
